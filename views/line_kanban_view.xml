@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+    <record id="view_line_kanban" model="ir.ui.view">
+        <field name="name">Line Kanban View</field>
+        <field name="model">interest.line</field>
+        <field name="arch" type="xml">
+            
+        <kanban class="o_kanban_mobile" 
+            sample="1"
+            default_group_by="state"
+            js_class= "project_task_kanban"
+          >
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="row">
+                                <div class="col-12">
+                                    <strong>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<!-- XML Template file for RatePeriodComponent -->
+                <template  xml:space="preserve">
+<t t-name="interest.RatePeriodComponent" owl="1">
+    <div class="RatePeriodComponent">
+        <t t-foreach="state.records" t-as="record">
+            <div class="record-item">
+                <t t-esc="record.name"/>
+            </div>
+        </t>
+    </div>
+</t>
+</template>

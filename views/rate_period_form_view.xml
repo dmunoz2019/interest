@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+        <record id="view_rate_period_form" model="ir.ui.view">
+            <field name="name">Rate_period Form View</field>
+            <field name="model">interest.rate.period</field>
+            <field name="arch" type="xml">
+
+                <form class="oe_form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group class="oe_form_group_row">
+                            <group class="oe_form_group_col_6">
+                                <field name="days_in_period" />
+                            </group>
+                            <group class="oe_form_group_col_6">
+                            </group>
+                        </group>
+                        <!-- ... other fields or elements ... -->
+                    </sheet>
+
+                </form>
+
+            </field>
+        </record>
+    </data>
+</odoo>

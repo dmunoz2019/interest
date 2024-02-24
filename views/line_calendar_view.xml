@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+    <record id="view_line_calendar" model="ir.ui.view">
+        <field name="name">Line Calendar View</field>
+        <field name="model">interest.line</field>
+        <field name="arch" type="xml">
+            
+      
+        </field>
+    </record>
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<!-- XML Template file for RuleComponent -->
+                <template  xml:space="preserve">
+<t t-name="interest.RuleComponent" owl="1">
+    <div class="RuleComponent">
+        <t t-foreach="state.records" t-as="record">
+            <div class="record-item">
+                <t t-esc="record.name"/>
+            </div>
+        </t>
+    </div>
+</t>
+</template>

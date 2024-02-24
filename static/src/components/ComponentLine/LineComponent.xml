@@ -1,0 +1,12 @@
+<!-- XML Template file for LineComponent -->
+                <template  xml:space="preserve">
+<t t-name="interest.LineComponent" owl="1">
+    <div class="LineComponent">
+        <t t-foreach="state.records" t-as="record">
+            <div class="record-item">
+                <t t-esc="record.name"/>
+            </div>
+        </t>
+    </div>
+</t>
+</template>
