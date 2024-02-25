@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+    <record id="view_rule_tree" model="ir.ui.view">
+        <field name="name">Rule Tree View</field>
+        <field name="model">interest.rule</field>
+        <field name="arch" type="xml">
+            
+        <tree>
+            <field name='name'/>
+            <field name='interest_rate'/>
+            <field name='rate_period_id'/>
+        </tree>
+        </field>
+    </record>
+    </data>
+</odoo>

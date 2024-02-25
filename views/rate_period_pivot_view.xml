@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+    <record id="view_rate_period_pivot" model="ir.ui.view">
+        <field name="name">Rate_period Pivot View</field>
+        <field name="model">interest.rate.period</field>
+        <field name="arch" type="xml">
+            
+        <pivot>
+            <field name='name' type='col'/>
+        </pivot>
+        </field>
+    </record>
+    </data>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+interest.access_interest_rate_period,access_interest_rate_period,interest.model_interest_rate_period,base.group_user,1,1,1,1
+interest.access_interest_rule,access_interest_rule,interest.model_interest_rule,base.group_user,1,1,1,1
+interest.access_interest_line,access_interest_line,interest.model_interest_line,base.group_user,1,1,1,1

@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record id="view_rule_form" model="ir.ui.view">
+            <field name="name">Rule Form View</field>
+            <field name="model">interest.rule</field>
+            <field name="arch" type="xml">
+                <form class="oe_form">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group class="oe_form_group_row">
+                            <group class="oe_form_group_col_6">
+                                <field name="interest_rate"/>
+                            </group>
+                            <group class="oe_form_group_col_6">
+                                <field name="rate_period_id"/>
+                            </group>
+                        </group>
+                        <!-- ... other fields or elements ... -->
+                        <!-- notebook for python codition  -->
+                        <notebook>
+                            <page string="Condition">
+                                <field name="condition"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

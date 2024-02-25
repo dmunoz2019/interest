@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+    <record id="view_line_tree" model="ir.ui.view">
+        <field name="name">Line Tree View</field>
+        <field name="model">interest.line</field>
+        <field name="arch" type="xml">
+            
+        <tree>
+            <field name='invoice_id'/>
+            <field name='interest_amount'/>
+            <field name='interest_rule_id'/>
+        </tree>
+        </field>
+    </record>
+    </data>
+</odoo>

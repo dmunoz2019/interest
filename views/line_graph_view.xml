@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+    <record id="view_line_graph" model="ir.ui.view">
+        <field name="name">Line Graph View</field>
+        <field name="model">interest.line</field>
+        <field name="arch" type="xml">
+            
+        <graph>
+        </graph>
+        </field>
+    </record>
+    </data>
+</odoo>

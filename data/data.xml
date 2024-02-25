@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="interest_rate_period_1" model="interest.rate.period">
+            <field name="name">1 día</field>
+            <field name="days_in_period">1</field>
+        </record>
+
+        <record id="interest_rate_period_2" model="interest.rate.period">
+            <field name="name">30 días</field>
+            <field name="days_in_period">30</field>
+        </record>
+
+        <record id="interest_rule_1" model="interest.rule">
+            <field name="name">10%</field>
+            <field name="interest_rate">10</field>
+            <field name="rate_period_id" ref="interest_rate_period_1"/>
+            <field name="condition"></field>
+        </record>
+
+        <record id="interest_rule_2" model="interest.rule">
+            <field name="name">20%</field>
+            <field name="interest_rate">20</field>
+            <field name="rate_period_id" ref="interest_rate_period_2"/>
+            <field name="condition"></field>
+        </record>
+
+    </data>
+</odoo>

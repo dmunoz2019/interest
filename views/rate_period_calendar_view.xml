@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+    <record id="view_rate_period_calendar" model="ir.ui.view">
+        <field name="name">Rate_period Calendar View</field>
+        <field name="model">interest.rate.period</field>
+        <field name="arch" type="xml">
+            
+      
+        </field>
+    </record>
+    </data>
+</odoo>

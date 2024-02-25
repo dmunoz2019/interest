@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+    <record id="view_line_pivot" model="ir.ui.view">
+        <field name="name">Line Pivot View</field>
+        <field name="model">interest.line</field>
+        <field name="arch" type="xml">
+            
+        <pivot>
+        </pivot>
+        </field>
+    </record>
+    </data>
+</odoo>

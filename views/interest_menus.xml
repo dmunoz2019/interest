@@ -1,0 +1,65 @@
+<odoo>
+
+    <record id="action_rate_period" model="ir.actions.act_window">
+        <field name="name">Plazos</field>
+        <field name="res_model">interest.rate.period</field>
+        <field name="view_mode">tree,form,kanban,pivot,graph</field>
+    </record>
+
+    <record id="action_rule" model="ir.actions.act_window">
+        <field name="name">Regla de Interés</field>
+        <field name="res_model">interest.rule</field>
+        <field name="view_mode">tree,form,kanban,pivot,graph</field>
+    </record>
+
+    <record id="action_line" model="ir.actions.act_window">
+        <field name="name">Line Action</field>
+        <field name="res_model">interest.line</field>
+        <field name="view_mode">tree,form,kanban,pivot,graph</field>
+    </record>
+
+    <record id="action_rate_period_server" model="ir.actions.server">
+        <field name="name">Rate Period Action Server</field>
+        <field name="model_id" ref="model_interest_rate_period"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree",
+                "res_model": model._name,
+              }
+        </field>
+    </record>
+
+    <record id="action_rule_server" model="ir.actions.server">
+        <field name="name">Rule Action Server</field>
+        <field name="model_id" ref="model_interest_rule"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree",
+                "res_model": model._name,
+              }
+        </field>
+    </record>
+
+    <record id="action_line_server" model="ir.actions.server">
+        <field name="name">Line Action Server</field>
+        <field name="model_id" ref="model_interest_line"/>
+        <field name="state">code</field>
+        <field name="code">
+        action = {
+                "type": "ir.actions.act_window",
+                "view_mode": "tree",
+                "res_model": model._name,
+              }
+        </field>
+    </record>
+    <menuitem id="menu_interest" name="Interés" parent="account.menu_finance" sequence="10"/>
+
+    <menuitem id="menu_rate_period" name="Plazos" parent="menu_interest" action="action_rate_period" sequence="10"/>
+
+    <menuitem id="menu_rule" name="Tasas" parent="menu_interest" action="action_rule" sequence="10"/>
+    <!-- <menuitem id="menu_line" name="Line" parent="menu_interest" action="action_line" sequence="1" /> -->
+</odoo>

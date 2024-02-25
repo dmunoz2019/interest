@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+    <record id="view_rate_period_graph" model="ir.ui.view">
+        <field name="name">Rate_period Graph View</field>
+        <field name="model">interest.rate.period</field>
+        <field name="arch" type="xml">
+            
+        <graph>
+            <field name='name' type='bar'/>
+        </graph>
+        </field>
+    </record>
+    </data>
+</odoo>
