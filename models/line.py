@@ -9,6 +9,8 @@ class InterestLine(models.Model):
     invoice_id = fields.Many2one('account.move', string='Factura')
     interest_amount = fields.Float(string='Interés a Pagar', required=True)
     interest_rule_id = fields.Many2one('interest.rule', string='Interés')
+    date = fields.Date(string='Fecha', default=date.today())
+    
     @api.model
     def create(self, vals):
         invoice_id = vals.get('invoice_id')

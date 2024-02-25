@@ -7,7 +7,7 @@
             
         <tree>
             <field name='name'/>
-            <field name='days_in_period'/>
+            <field name='period'/>
         </tree>
         </field>
     </record>

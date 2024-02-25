@@ -7,7 +7,7 @@
             
         <tree>
             <field name='name'/>
-            <field name='interest_rate'/>
+            <field name='interest_rate' widget="percentage"/>
             <field name='rate_period_id'/>
         </tree>
         </field>
