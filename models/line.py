@@ -14,6 +14,5 @@ class InterestLine(models.Model):
         invoice_id = vals.get('invoice_id')
         if invoice_id:
             invoice = self.env['account.move'].browse(invoice_id)
-            # Use the calculated interest from the invoice if no interest amount is specified
             vals['interest_amount'] = vals.get('interest_amount', invoice.calculated_interest)
         return super(InterestLine, self).create(vals)

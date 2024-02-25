@@ -11,12 +11,14 @@
                     <page string="Intereses" attrs="{'invisible': [('move_type', '=', 'entry')]}">
                         <field name="interest_line_ids" context="{'default_move_id': active_id}">
                             <tree editable="bottom">
-                                <field name="invoice_id"/>
-                                <field name="interest_amount"/>
-                                <field name="interest_rule_id"/>
+                                <field name="invoice_id" string="Factura"/>
+                                <field name="interest_amount" string="Interés"/>
+                                <field name="interest_rule_id" string="Regla de interés"/>
                             </tree>
                             <!-- You can also include a form view within the page if needed -->
                         </field>
+                        <field name="calculated_interest" string="Interés" class="oe_subtotal_footer_separator" />
+                        <field name="total_with_interest" string="Total con interés" class="oe_subtotal_footer_separator" />
                     </page>
                 </xpath>
             </field>

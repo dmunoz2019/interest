@@ -58,7 +58,7 @@
     </record>
     <menuitem id="menu_interest" name="Interés" parent="account.menu_finance" sequence="10"/>
 
-    <menuitem id="menu_rate_period" name="Plazos" parent="menu_interest" action="action_rate_period" sequence="10"/>
+    <menuitem id="menu_rate_period" name="Períodos de Tasa de Interés" parent="menu_interest" action="action_rate_period" sequence="10"/>
 
     <menuitem id="menu_rule" name="Tasas" parent="menu_interest" action="action_rule" sequence="10"/>
     <!-- <menuitem id="menu_line" name="Line" parent="menu_interest" action="action_line" sequence="1" /> -->
